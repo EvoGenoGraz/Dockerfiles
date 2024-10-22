@@ -2,7 +2,7 @@ FROM ubuntu:24.04
 
 RUN apt update && \
 	apt upgrade -y && \
-	apt install -y build-essential wget zlib1g zlib1g-dev && \
+	apt install -y build-essential wget zlib1g zlib1g-dev python3 && \
 	apt clean
 
 WORKDIR /usr/src
